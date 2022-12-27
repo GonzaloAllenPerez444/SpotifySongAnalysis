@@ -3,6 +3,7 @@ const path = require("path");
 module.exports = {
   mode: "development",
   entry: "./src/index.js",
+  
   output: {
     path: path.resolve(__dirname, "public"),
     filename: "main.js",
@@ -25,7 +26,12 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: "babel-loader",
+        use: {
+          loader: "babel-loader",
+          options:{
+            presets: ['@babel/react']
+          }
+        }
       },
       {
         test: /\.css$/,

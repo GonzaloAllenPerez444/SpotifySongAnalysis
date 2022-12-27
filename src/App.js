@@ -2,7 +2,7 @@ import React, { useState, SetStateAction, useEffect } from "react";
 import Instructions from "./Instructions";
 import {URIFORM, sendData} from './URIForm';
 //import GetAPIDATA and GetAPIDATAJSON
-
+import GetAPIData from "./getAPIData";
 
 import Results from "./pages/results"
 import { useNavigate, BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
