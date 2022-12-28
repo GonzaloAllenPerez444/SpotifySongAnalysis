@@ -2,5 +2,7 @@ import sys
 import json
 
 
-print("hamburger")
+
+outside = sys.argv[1]
+print(outside)
 sys.stdout.flush()

@@ -20,12 +20,12 @@ app.get("/api",
 
 
     //res.send("BEBEBEEBEBBEE")
-    
+
     const spawn = require('child_process').spawn;
     const process = spawn('python',['./main.py',
     req.query.URI]);
-
-    process.stdout.on('data', (data) => {res.send( data.toString())});
+  //data.toString()
+    process.stdout.on('data', (data) => {res.send(data.toString())});
 
     //res.json({"myKey": ["this will be ","spotify","stats from the api..."]})
 }
@@ -46,10 +46,15 @@ app.get("/sample",
 (req,res) => { 
 
 const spawn2 = require('child_process').spawn;
-const process2 = spawn2('python',['./sample.py'])
+const process2 = spawn2('python',['./sample.py',req.query.URI])
 process2.stdout.on('data', (data) => {res.send(data.toString())})
 
 }
 
 
+)
+
+app.get("/ok",
+
+(req,res) =>{ res.send(req.query.URI)}
 )

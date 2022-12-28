@@ -1,4 +1,4 @@
-import React, {useS} from "react";
+import React, {useState} from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import '../public/index.css';
