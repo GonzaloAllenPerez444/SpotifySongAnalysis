@@ -19,7 +19,7 @@ const App = () => {
   };
   return (
     <div>
-      This was made from Scratch? Also hello world! WE'RE CLIMBING BABAY!
+      This was made from Scratch? Also hello world! WE'RE CLIMBING BABAY!3
       <button onClick={increment}>Increment</button>
       {counter}
     </div>
