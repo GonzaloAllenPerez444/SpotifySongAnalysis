@@ -33,12 +33,19 @@ const GetAPIData = (input) => {
     let result;
     let resultString;
     
-    
-    result = axios.get(`/api?URI=${input.d2}`).then(res => {console.log(res);resultString = res;});//.then(res => res.json()).then(console.log("in normal GetDataAPI, backend data is " + res))
+    async function f1(){
+    result = await axios.get(`/api?URI=${input.d2}`)//.then(res => res.json()).then(console.log("in normal GetDataAPI, backend data is " + res))
     //resultString = JSON.stringify(result);
 
+    resultString = JSON.stringify(result);
     
     console.log("attempt " + resultString);
+
+}
+
+    f1();
+
+
     //console.log(result);
         /*
     async function Fetch2()
@@ -53,7 +60,7 @@ const GetAPIData = (input) => {
 
         <div> 
             
-            {(result.energy === 'undefined')?
+            {(result === 'undefined')?
             
             (<p>loading</p>) :
             (<h2>Song stats:{resultString}</h2>)} </div>
