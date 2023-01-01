@@ -31,14 +31,14 @@ const GetAPIData = (input) => {
 
     //make this asynhronous
     let result;
-    let resultString;
+    let [resultString,setResultString]  = useState("Nothing yet");
     
     async function f1(){
     result = await axios.get(`/api?URI=${input.d2}`)//.then(res => res.json()).then(console.log("in normal GetDataAPI, backend data is " + res))
     //resultString = JSON.stringify(result);
 
-    resultString = JSON.stringify(result);
-    
+    //resultString = JSON.stringify(result);
+    setResultString(JSON.stringify(result));
     console.log("attempt " + resultString);
 
 }
@@ -46,6 +46,7 @@ const GetAPIData = (input) => {
     f1();
 
 
+   
     //console.log(result);
         /*
     async function Fetch2()
