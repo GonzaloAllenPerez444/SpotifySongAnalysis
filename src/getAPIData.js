@@ -34,8 +34,12 @@ const GetAPIData = (input) => {
     let resultString;
     
     
-    result = axios.get(`/api?URI=${input.d2}`).then(res => res.json());
-    resultString = JSON.stringify(result);
+    result = axios.get(`/api?URI=${input.d2}`).then(res => {console.log(res);resultString = res;});//.then(res => res.json()).then(console.log("in normal GetDataAPI, backend data is " + res))
+    //resultString = JSON.stringify(result);
+
+    
+    console.log("attempt " + resultString);
+    //console.log(result);
         /*
     async function Fetch2()
     {
@@ -44,7 +48,7 @@ const GetAPIData = (input) => {
     } */
 
 
-    console.log("in normal GetDataAPI, backend data is " + result)
+    
     return (
 
         <div> 
