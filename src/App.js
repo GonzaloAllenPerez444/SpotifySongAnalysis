@@ -26,8 +26,6 @@ const App = () => {
           <Instructions />
           
 
-
-          < GetAPIData d2="spotify:track:17VP4tofJ3evJbtY8Tk1Qi" /> 
           
            <URIForm id="form1"  />
 
