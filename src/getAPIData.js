@@ -38,7 +38,7 @@ const GetAPIData = (input) => {
     //resultString = JSON.stringify(result);
 
     //resultString = JSON.stringify(result);
-    setResultString(JSON.stringify(result));
+    setResultString(JSON.stringify(result.data));
     console.log("attempt " + resultString);
 
 }
