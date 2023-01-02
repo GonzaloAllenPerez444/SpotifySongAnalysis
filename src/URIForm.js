@@ -8,7 +8,7 @@ import ErrorPage from './pages/ErrorPage'
 
 const initialFormData = Object.freeze({uri: "sample"});
 export let input1 =" nothing yet chief ";
-export let sendData = "";
+
 
 export function getInput()
     {return input1;}
@@ -39,7 +39,7 @@ export const URIForm = (props) => {
     return (
         <div>
             
-            <form onSubmit={()=>{console.log("formdata.uri : "+ formData.uri);input1=formData.uri;console.log("input1 var " + input1);console.log("input1" + getInput()); navi("./Results",{state: {info: formData.uri}})}}>
+            <form onSubmit={()=>{input1=formData.uri;console.log("input1 var " + input1); navi("./Results",{state: {info: formData.uri}})}}>
   
                 <div className="uriform">
                 <label htmlFor="uri2" className="form-label">SONG URI</label>

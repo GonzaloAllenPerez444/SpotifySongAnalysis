@@ -9,12 +9,13 @@ function Results(props)
     
     let ours;
     
+    //gets the form input from the previous form
     useEffect(
 
-        ()=>{ ours=getInput().toString();console.log("ours attempt: " +ours);}
+        ()=>{ ours=getInput().toString()}
     );
     const location = useLocation();
-    console.log("supposed state ");
+    
 return (
     <div>
         <h1>on results page now.</h1>
