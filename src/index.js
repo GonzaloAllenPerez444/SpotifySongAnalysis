@@ -4,7 +4,7 @@ import App from "./App";
 import '../public/index.css';
 import { useNavigate, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Results from './pages/results';
-import ErrorPage from './pages/ErrorPage';
+import {ErrorPage} from './pages/ErrorPage';
 
 const root = document.getElementById('root');
 
@@ -18,10 +18,11 @@ const Start = () => {
         <Router>
         <Routes>
                   <Route path="/" element={< App />} />
+                  <Route path="/please" element={<h1>please</h1>} />
                   <Route path="/Results" element={< Results />} />
-                  <Route path="/*" element={< ErrorPage />} />
+                  <Route path="*" element={<h1> This isn't a valid page </h1>} />
                   
-              </Routes>
+        </Routes>
       
       </Router>
       

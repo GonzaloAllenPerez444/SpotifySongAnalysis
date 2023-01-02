@@ -1,7 +1,7 @@
 
 import React from "react";
 
-function Results()
+export const ErrorPage = () =>
 {
 return (
     <div>
@@ -12,4 +12,4 @@ return (
 }
 
 
-export default Results;
+//export default ErrorPage;
