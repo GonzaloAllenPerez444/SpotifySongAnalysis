@@ -1,12 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-//import GetAPIData from "./getAPIData";
 import Results from "./pages/results"
 import {  BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-//import {useHistory } from 'react-router-dom';
 import results from './pages/results';
 import ErrorPage from './pages/ErrorPage'
-//import GetAPIDataJSON from "./GetAPIDataJSON";
+
 
 const initialFormData = Object.freeze({uri: "sample"});
 export let input1 =" nothing yet chief ";
@@ -37,32 +35,6 @@ export const URIForm = (props) => {
       };
 
     
-      const HandleSubmit = (e) => {
-
-        
-
-            /*
-            e.preventDefault()
-            console.log("in handle submit" + formData.uri);
-           
-            
-            
-            //you can now use this info for the expressJS API and beyond
-            async function doAPI(e) {
-            let response =  GetAPIDataJSON(formData.uri);
-            console.log("real shit p2: " +response)
-
-            return Na(response);
-        
-            }
-
-            doAPI(e); */
-            //props.stateChanger(formData.uri);
-            
-            
-            
-
-      }
 
     return (
         <div>

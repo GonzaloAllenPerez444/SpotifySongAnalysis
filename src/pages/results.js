@@ -8,7 +8,7 @@ function Results(props)
 {
     
     let ours;
-    //<GetAPIData d2={ours} />
+    
     useEffect(
 
         ()=>{ ours=getInput().toString();console.log("ours attempt: " +ours);}
