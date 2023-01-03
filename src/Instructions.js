@@ -16,7 +16,10 @@ return (
     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div className="accordion-body">
         <p> For this project, I used Webpack to bundle files in conjunction with React and Bootstrap for the frontend,
-          and used ExpressJS and the Spotipy Python library to interact with the Spotify Web API for the backend.
+          and used ExpressJS and the Spotipy Python library to interact with the Spotify Web API for the backend. Some of these
+           statistics include a song's  speechiness, it's danceability, and even the song's overall popularity compared to all songs on Spotify. 
+           With this data, you could get a better overall view of what a person truly enjoys in music and point them to music that
+           would fit their taste-an extension I'm considering building in the future. 
         </p>
         
       </div>
@@ -33,7 +36,7 @@ return (
         <p id="directions">In order to use, simply paste the song's URI from your Spotify Application into the
           form below. A song's URI can be found by right clicking the song name, hovering over "share" ,
            then holding the [alt] key, which should show
-          "Copy Spotify URI"
+          "Copy Spotify URI". Then just hit analyze to send!
         </p> <p></p>
         <div className="graphics">
         <img src="../graphic2.png" id="graphic2" />

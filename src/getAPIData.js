@@ -34,7 +34,7 @@ const GetAPIData = (input) => {
 
 
 
-    console.log("result is " + result)
+    console.log("resultString is " + resultString.substring(1,6))
     return (
 
         <div> 
@@ -49,7 +49,10 @@ const GetAPIData = (input) => {
                 </div> </div>
 
             ) :
-            (<h2>Song stats:{resultString}</h2>)} </div>
+            (
+            (resultString.substring(1,6) == "Error")? (<h2>Something went wrong. Make sure your URI looks like "spotify:track:xxxxxxxxxx"</h2>):
+
+            (<h2>Song stats:{resultString}</h2>))} </div>
         
             
            

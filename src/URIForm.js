@@ -31,23 +31,26 @@ export const URIForm = (props) => {
           
           [e.target.name]: e.target.value.trim()
         });
-        console.log("handlechange "+ formData.uri);
+        
       };
 
     
 
     return (
-        <div>
+        <div id="formDiv">
             
-            <form onSubmit={()=>{input1=formData.uri;console.log("input1 var " + input1); navi("./Results",{state: {info: formData.uri}})}}>
+            <form id="form1" onSubmit={()=>{input1=formData.uri; navi("./Results",{state: {info: formData.uri}})}}>
   
                 <div className="uriform">
                 <label htmlFor="uri2" className="form-label">SONG URI</label>
                 <input type="text" className="form-control" id="uri-input" onChange={HandleChange} name="uri" />
-                </div>
-  
-                <button type="submit" className="submitButton">ANALYZE</button>
                 
+                
+
+                <button type="submit" className="submitButton">
+                    <h3 id="submission" >ANALYZE</h3>
+                </button>
+                </div>
             </form>
         
         </div>
