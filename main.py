@@ -6,7 +6,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-#example URI: 0gW6KLC4W6vChWUHucb69N
+#example URI: spotify:track:1Qrg8KqiBpW07V7PNxwwwL
 
 
 def SpotifyData():
@@ -45,4 +45,8 @@ def SpotifyData():
 
     sys.stdout.flush()
 
-SpotifyData()
+try: 
+    SpotifyData()
+except: 
+    print("Error")
+    sys.stdout.flush()
