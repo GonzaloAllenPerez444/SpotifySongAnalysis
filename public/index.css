@@ -48,12 +48,12 @@ code {
 .accordion {padding: 150px; width:75%; margin-left: 12.5%; }
 
 #col {display: flex; flex-direction: row;}
-#directions {width: 50%; text-align: left; padding-right: 3%; border-right: 2px solid black}
+#directions {width: 70%; text-align: left; padding: 3%; font-size: large;}
 
 .graphics{align-items: right;}
-#graphic2 {max-height: 100%; max-width: 50%; }
-#graphic3 {max-height: 100%; max-width: 50%; } 
-#graphic4 {max-height: 100%; max-width: 50%; }
+#graphic2 {max-height: 100%; max-width: 100%; }
+#graphic3 {max-height: 100%; max-width: 100%; } 
+#graphic4 {max-height: 100%; max-width: 100%; }
 
 
 
