@@ -6,7 +6,7 @@ import Results from "./pages/results"
 import { useNavigate, BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './header';
 import results from './pages/results';
-import ErrorPage from './pages/ErrorPage';
+
 
 
 const App = () => {

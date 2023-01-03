@@ -2,9 +2,9 @@ import React, {useState} from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import '../public/index.css';
-import { useNavigate, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useNavigate, BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import Results from './pages/results';
-import {ErrorPage} from './pages/ErrorPage';
+
 
 const root = document.getElementById('root');
 

@@ -7,15 +7,17 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "public"),
     filename: "main.js",
+    publicPath: '/'
   },
 
   target: "web",
   devServer: {
-    port: "3000",
+    port: "5001",
     static: ["./public"],
     open: true,
     hot: true,
     liveReload: true,
+    historyApiFallback: true,
   },
   resolve: {
     //might need to alter some stuff so it's cool with css

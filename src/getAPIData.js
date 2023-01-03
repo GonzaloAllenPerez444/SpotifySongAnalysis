@@ -8,6 +8,7 @@ import axios from "axios";
 console.log("express loaded in here sucessfully");
 
 
+let result = "none";
 const GetAPIData = (input) => {
 
 
@@ -18,7 +19,7 @@ const GetAPIData = (input) => {
 
 
     
-    let result;
+    
     let [resultString,setResultString]  = useState("Nothing yet");
     
     async function f1(){
@@ -33,14 +34,21 @@ const GetAPIData = (input) => {
 
 
 
-    
+    console.log("result is " + result)
     return (
 
         <div> 
             
-            {(result === 'undefined')?
+            {(result == "none")?
             
-            (<p>loading</p>) :
+            (
+            <div className="loading">
+                <h3 id="loadingText">LOADING</h3>
+                <div id="spin" class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                </div> </div>
+
+            ) :
             (<h2>Song stats:{resultString}</h2>)} </div>
         
             

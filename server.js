@@ -32,3 +32,17 @@ app.get("/api",
 
 )
 
+app.get("graphic2.png", 
+(req,res) => {
+  res.sendFile(path.resolve(__dirname +'/public/graphic2.png'))
+}
+
+)
+
+
+app.get("*",
+
+(req,res) => {
+  res.sendFile(path.resolve(__dirname +'/public/error.html'))
+}
+)

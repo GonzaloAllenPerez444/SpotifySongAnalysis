@@ -15,19 +15,30 @@ return (
     </h2>
     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-        <p> info on how I buuilt this</p>
+        <p> For this project, I used Webpack to bundle files in conjunction with React and Bootstrap for the frontend,
+          and used ExpressJS and the Spotipy Python library to interact with the Spotify Web API for the backend.
+        </p>
+        
       </div>
     </div>
   </div>
   <div className="accordion-item">
     <h2 className="accordion-header" id="AccordionHeadingTwo">
       <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        How to use
+        How to Use
       </button>
     </h2>
     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-        <p>info on how to use</p>
+        <p>In order to use, simply paste the song's URI from your Spotify Application into the
+          form below. A song's URI can be found by right clicking the song name, hovering over "share" ,
+           then holding the [alt] key, which should show
+          "Copy Spotify URI"
+        </p>
+        <div className="images">
+        <img src="../graphic2.png" />
+
+        </div>
       </div>
     </div>
   </div>
