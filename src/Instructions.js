@@ -5,7 +5,7 @@ const Instructions = () =>
 {
 
 return (
-
+ 
     <div className="accordion" id="accordionExample">
   <div className="accordion-item">
     <h2 className="accordion-header" id="AccordionHeadingOne">
@@ -34,16 +34,17 @@ return (
           form below. A song's URI can be found by right clicking the song name, hovering over "share" ,
            then holding the [alt] key, which should show
           "Copy Spotify URI"
-        </p>
-        <div className="images">
-        <img src="../graphic2.png" />
-
-        </div>
-      </div>
+        </p> </div> 
+        <div className="graphics">
+        <img src="../graphic2.png" id="graphic2" />
+        <img src="../graphic3.png" id="graphic3" />
+        <img src="../graphic4.png" id="graphic4" />
     </div>
-  </div>
-  
+    </div> 
+    </div>
 </div>
+
+
 )
 
 

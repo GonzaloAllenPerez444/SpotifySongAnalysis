@@ -44,8 +44,8 @@ const GetAPIData = (input) => {
             (
             <div className="loading">
                 <h3 id="loadingText">LOADING</h3>
-                <div id="spin" class="spinner-border" role="status">
-                    <span class="sr-only"></span>
+                <div id="spin" className="spinner-border" role="status">
+                    <span className="sr-only"></span>
                 </div> </div>
 
             ) :

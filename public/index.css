@@ -42,13 +42,15 @@ code {
 
 .uriform {  margin-left: 40%; width: 200px; height: 200px; }
 
-.submitButton { position: absolute; top: 60pc; right: 20px; border: 1px solid white; }
+.submitButton {  border: 1px solid white; margin-bottom: 5%; margin-left: 90%;}
 
 
-.accordion {padding: 150px; width:50%; margin-left: 25%; }
+.accordion {padding: 150px; width:75%; margin-left: 12.5%; }
 
 
-
+#graphic2 {max-height: 100%; max-width: 100%}
+#graphic3 {max-height: 100%; max-width: 100%; margin-top: 5%;} 
+#graphic4 {max-height: 100%; max-width: 100%; margin-top: 5%;}
 
 
 

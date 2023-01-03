@@ -47,6 +47,7 @@ export const URIForm = (props) => {
                 </div>
   
                 <button type="submit" className="submitButton">ANALYZE</button>
+                
             </form>
         
         </div>

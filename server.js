@@ -39,6 +39,19 @@ app.get("graphic2.png",
 
 )
 
+app.get("graphic3.png", 
+(req,res) => {
+  res.sendFile(path.resolve(__dirname +'/public/graphic3.png'))
+}
+
+)
+
+app.get("graphic4.png", 
+(req,res) => {
+  res.sendFile(path.resolve(__dirname +'/public/graphic4.png'))
+}
+
+)
 
 app.get("*",
 
