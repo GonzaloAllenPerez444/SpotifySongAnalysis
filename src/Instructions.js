@@ -29,8 +29,8 @@ return (
       </button>
     </h2>
     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div className="accordion-body">
-        <p>In order to use, simply paste the song's URI from your Spotify Application into the
+      <div className="accordion-body" id="col">
+        <p id="directions">In order to use, simply paste the song's URI from your Spotify Application into the
           form below. A song's URI can be found by right clicking the song name, hovering over "share" ,
            then holding the [alt] key, which should show
           "Copy Spotify URI"
