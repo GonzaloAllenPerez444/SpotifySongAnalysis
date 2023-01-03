@@ -34,11 +34,13 @@ return (
           form below. A song's URI can be found by right clicking the song name, hovering over "share" ,
            then holding the [alt] key, which should show
           "Copy Spotify URI"
-        </p> </div> 
+        </p> <p></p>
         <div className="graphics">
         <img src="../graphic2.png" id="graphic2" />
         <img src="../graphic3.png" id="graphic3" />
         <img src="../graphic4.png" id="graphic4" />
+        
+        </div> 
     </div>
     </div> 
     </div>
