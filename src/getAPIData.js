@@ -1,10 +1,9 @@
-//import express from "express";
-//import { response } from "express";
-//import { response } from "express";
+
 import React from "react";
 import { useState, useEffect } from "react"
 import axios from "axios";
-///const express = require('express');
+import Carousel from "./Carousel"
+
 console.log("express loaded in here sucessfully");
 
 
