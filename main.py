@@ -50,11 +50,12 @@ def SpotifyData():
     features = (sp.audio_features(songID)[0])
     musicData = dict(list(features.items())[:11])
 
-    stats = json.dumps(musicData)
-
-    masterDict = {"Artists" : artistList,"SongName" : details["name"], "Popularity" : details["popularity"], "stats" : stats}
-    print(masterDict)
     
+
+
+    masterDict = {"Artists" : artistList,"SongName" : details["name"], "Popularity" : details["popularity"], "stats" : musicData}
+    masterString = json.dumps(masterDict)
+    print(masterString)
     sys.stdout.flush() 
 
 
@@ -64,4 +65,3 @@ try:
 except: 
     print("Error")
     sys.stdout.flush()
-   
