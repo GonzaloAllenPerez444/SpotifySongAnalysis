@@ -71,4 +71,15 @@ code {
 #carouselAll {color: gray; background-color: gainsboro; height: 50%;}
 
 
-.distance { width: 95%; height: 95%;}
+.distance-top { width: 15%; height: 15%;}
+.distance-mid {width: 15%; height: 15%}
+.distance-bottom {width: 60%; height: 60%;}
+
+.carousel-control-next-icon {color: black;background-color: black;}
+.carousel-control-prev-icon {color: black; background-color: black;}
+.carousel-control-prev{color: black; background-color: black;}
+.carousel-control-next{color: black; background-color: black;}
+
+#space {height: 20%;}
+
+.statTitle {display: flex; justify-content: center;}

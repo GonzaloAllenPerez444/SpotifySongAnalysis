@@ -22,6 +22,7 @@ const GetAPIData = (input) => {
     let [resultString,setResultString]  = useState("Nothing yet");
     
     let [song, setSong] = useState("Nothing yet")
+    let [artist, setArtist] = useState("Nothing yet")
 
 
     async function f1(){
@@ -36,6 +37,8 @@ const GetAPIData = (input) => {
 
             
             setSong( dataArray.SongName);
+            console.log(dataArray.Artists)
+            setArtist(dataArray.Artists);
             
         };
 
@@ -68,8 +71,8 @@ const GetAPIData = (input) => {
                 <h2>Song stats:{resultString}</h2> 
                 <p></p>
                 <h3> TITLE IS {song}</h3>
-                <p></p>
-                < Carousel />
+                <div id="space" ></div>
+                < Carousel SongName={song}/>
                 </div>))} 
               
 

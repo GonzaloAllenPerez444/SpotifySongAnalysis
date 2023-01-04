@@ -15,21 +15,29 @@ const Carousel = (props) =>{
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <div className="distance"> </div>
+      <div className="distance-top"> </div>
+      <h1 className="statTitle">{props.SongName}</h1>
+      <div className="distance-mid"></div>
+      <h3 className="statTitle">By </h3>
+      <div className="distance-bottom"> </div>
       <div className="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
     <div className="carousel-item">
-    <div className="distance"> </div>
+    <div className="distance-top"> </div>
+      <h1 className="statTitle">ARTIST NAME HERE: </h1>
+      <div className="distance-bottom"> </div>
       <div className="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
     <div className="carousel-item">
-    <div className="distance"> </div>
+    <div className="distance-top"> </div>
+      <h1 className="statTitle">POPULARIY SCORE HERE</h1>
+      <div className="distance-bottom"> </div>
       <div className="carousel-caption d-none d-md-block">
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
