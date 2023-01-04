@@ -32,8 +32,13 @@ const GetAPIData = (input) => {
 
     f1();
 
+    if (resultString != "Nothing yet" && resultString != "Error")
+        {
+            let dataArray = JSON.parse(resultString);
+    console.log("dataArray is " + dataArray)
+        };
 
-
+        
     console.log("resultString is " + resultString.substring(1,6))
     return (
 
@@ -52,7 +57,11 @@ const GetAPIData = (input) => {
             (
             (resultString.substring(1,6) == "Error")? (<h2>Something went wrong. Make sure your URI looks like "spotify:track:xxxxxxxxxx"</h2>):
 
-            (<h2>Song stats:{resultString}</h2>))} </div>
+            (<h2>Song stats:{resultString}</h2>))} 
+              
+
+
+              </div>
         
             
            
