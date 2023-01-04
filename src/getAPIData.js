@@ -68,6 +68,8 @@ const GetAPIData = (input) => {
                 <h2>Song stats:{resultString}</h2> 
                 <p></p>
                 <h3> TITLE IS {song}</h3>
+                <p></p>
+                < Carousel />
                 </div>))} 
               
 
