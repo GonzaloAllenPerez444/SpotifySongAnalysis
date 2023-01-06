@@ -38,7 +38,7 @@ const Carousel = (props) =>{
 
       
       <div className="distance-split"> </div>
-      <h4 className="statTitle"> Popularity: {props.popularity}</h4>
+      <h4 className="statTitle"> Popularity: {props.popularity}/100</h4>
       <div className="distance-bottom"></div>
       <div className="carousel-caption d-none d-md-block">
     
