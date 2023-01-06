@@ -1,7 +1,22 @@
 import React from "react";
-
+import { useState } from "react";
 const Carousel = (props) =>{
-
+    console.log("props.artists is now "+ props.Artists + " and it's type is " + typeof(props.Artists));
+    //let [sep, setSep]  = useState((props.Artists != "Nothing yet")? "YEPEPEPE": "artists not loaded");
+    
+    /*
+    if (props.Artists != "Nothing yet")
+    { 
+     
+      let joined = props.Artists.join();
+      setSep(joined); }
+        */
+    function formatArtists (input)
+    {
+      let joined = input.join(",")
+      console.log("joined is " + joined);
+      return joined
+    }
     return (
         <div id="carouselAll">
         
@@ -16,13 +31,17 @@ const Carousel = (props) =>{
   <div className="carousel-inner">
     <div className="carousel-item active">
       <div className="distance-top"> </div>
-      <h1 className="statTitle">{props.SongName}</h1>
+      <h1 className="statTitle" >{props.SongName}</h1>
       <div className="distance-mid"></div>
-      <h3 className="statTitle">By </h3>
-      <div className="distance-bottom"> </div>
+      <h3 className="statTitle">By {props.Artists} </h3>
+
+
+      
+      <div className="distance-split"> </div>
+      <h4 className="statTitle"> Popularity: {props.popularity}</h4>
+      <div className="distance-bottom"></div>
       <div className="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+    
       </div>
     </div>
     <div className="carousel-item">

@@ -45,7 +45,7 @@ def SpotifyData():
 
     """
     artistList = [singer['name'] for singer in details['artists']]
-    artistList.append("END!")
+    
     
     features = (sp.audio_features(songID)[0])
     musicData = dict(list(features.items())[:11])

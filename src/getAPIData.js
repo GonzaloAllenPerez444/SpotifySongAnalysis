@@ -23,7 +23,7 @@ const GetAPIData = (input) => {
     
     let [song, setSong] = useState("Nothing yet")
     let [artist, setArtist] = useState("Nothing yet")
-
+    let [popularity, setPopularity] = useState("Nothing yet")
 
     async function f1(){
     result = await axios.get(`/api?URI=${input.d2}`);
@@ -37,8 +37,11 @@ const GetAPIData = (input) => {
 
             
             setSong( dataArray.SongName);
-            console.log(dataArray.Artists)
-            setArtist(dataArray.Artists);
+            console.log(dataArray.Artists);
+            let aString = dataArray.Artists.join(',');
+            
+            setArtist(aString);
+            setPopularity(dataArray.Popularity);
             
         };
 
@@ -72,7 +75,7 @@ const GetAPIData = (input) => {
                 <p></p>
                 <h3> TITLE IS {song}</h3>
                 <div id="space" ></div>
-                < Carousel SongName={song}/>
+                < Carousel SongName={song} Artists={artist} popularity={popularity}/>
                 </div>))} 
               
 
