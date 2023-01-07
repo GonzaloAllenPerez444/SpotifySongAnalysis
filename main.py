@@ -25,25 +25,7 @@ def SpotifyData():
     details = sp.track(songID)
 
 
-    """
-    print(details['name'])
-
-    print("Artists: ")
-    for singer in details['artists']:
-        print(singer['name'])
     
-    print("End Artists")
-    
-    print(str(details['popularity']) +"/100")
-    
-    
-    features = (sp.audio_features(songID)[0])
-    musicData = dict(list(features.items())[:11])
-
-    output = json.dumps(musicData)
-    print(output)
-
-    """
     artistList = [singer['name'] for singer in details['artists']]
     
     

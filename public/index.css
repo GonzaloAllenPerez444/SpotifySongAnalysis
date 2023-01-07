@@ -75,11 +75,14 @@ code {
 .distance-mid {width: 15%; height: 15%}
 .distance-bottom {width: 60%; height: 60%;}
 .distance-split {width: 40%; height: 40%;}
-
+.distance-tiny {width: 10%; height: 10%}
+.distance1 {width: 17.5%; height: 17.5%;}
 .carousel-control-next-icon {color: black;background-color: black;}
 .carousel-control-prev-icon {color: black; background-color: black;}
 .carousel-control-prev{color: black; background-color: black;}
 .carousel-control-next{color: black; background-color: black;}
+
+.caption {color: gray;}
 
 #space {height: 20%;}
 

@@ -23,7 +23,7 @@ export const URIForm = (props) => {
     
     
     const HandleChange = (e) => {
-        console.log("e " + e.target.name);
+        
         updateFormData({
           formData,
     

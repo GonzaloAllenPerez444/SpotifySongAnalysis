@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import axios from "axios";
 import Carousel from "./Carousel"
 
-console.log("express loaded in here sucessfully");
+
 
 
 let result = "none";
@@ -26,6 +26,8 @@ const GetAPIData = (input) => {
 
     let [dance, setDance] = useState("Nothing yet");
     let [energy, setEnergy] = useState("Nothing yet");
+    let [speech, setSpeech] = useState("Nothing yet");
+    let [valence, setValence] = useState("Nothing yet");
 
     async function f1(){
     result = await axios.get(`/api?URI=${input.d2}`);
@@ -39,14 +41,17 @@ const GetAPIData = (input) => {
 
             
             setSong( dataArray.SongName);
-            console.log(dataArray.Artists);
+            
             let aString = dataArray.Artists.join(',');
             
             setArtist(aString);
             setPopularity(dataArray.Popularity);
             setDance(dataArray.stats.danceability)
             setEnergy(dataArray.stats.energy);
+            setSpeech(dataArray.stats.speechiness);
+            setValence(dataArray.stats.valence);
             
+
             
         };
 
@@ -57,7 +62,7 @@ const GetAPIData = (input) => {
     
 
 
-    console.log("resultString is " + resultString.substring(1,6))
+    
     return (
 
         <div> 
@@ -76,11 +81,9 @@ const GetAPIData = (input) => {
             (resultString.substring(1,6) == "Error")? (<h2>Something went wrong. Make sure your URI looks like "spotify:track:xxxxxxxxxx"</h2>):
 
             (<div>
-                <h2>Song stats:{resultString}</h2> 
-                <p></p>
-                <h3> TITLE IS {song}</h3>
+                
                 <div id="space" ></div>
-                < Carousel SongName={song} Artists={artist} popularity={popularity} dance={dance}/>
+                < Carousel SongName={song} Artists={artist} popularity={popularity} dance={dance} energy={energy} speech={speech} valence={valence} />
                 </div>))} 
               
 

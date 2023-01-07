@@ -1,22 +1,8 @@
 import React from "react";
 import { useState } from "react";
 const Carousel = (props) =>{
-    console.log("props.artists is now "+ props.Artists + " and it's type is " + typeof(props.Artists));
-    //let [sep, setSep]  = useState((props.Artists != "Nothing yet")? "YEPEPEPE": "artists not loaded");
     
-    /*
-    if (props.Artists != "Nothing yet")
-    { 
-     
-      let joined = props.Artists.join();
-      setSep(joined); }
-        */
-    function formatArtists (input)
-    {
-      let joined = input.join(",")
-      console.log("joined is " + joined);
-      return joined
-    }
+    
     return (
         <div id="carouselAll">
         
@@ -28,6 +14,7 @@ const Carousel = (props) =>{
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
@@ -38,9 +25,9 @@ const Carousel = (props) =>{
 
 
       
-      <div className="distance-split"> </div>
+      <div className="distance-tiny"> </div>
       <h4 className="statTitle"> Popularity: {props.popularity}/100</h4>
-      <div className="distance-split"></div>
+      <div className="distance1"></div>
       <div className="carousel-caption d-none d-md-block">
     
       </div>
@@ -51,7 +38,7 @@ const Carousel = (props) =>{
       <div className="distance-bottom"> </div>
       <div className="carousel-caption d-none d-md-block">
         
-        <p>Danceability is how suitable a song is for dancing to. How can we
+        <p className="caption">Danceability is how suitable a song is for dancing to. How can we
           measure this? It's actually based on a combination of musical elements, ranging from tempo,
            rhythm stability, beat strength, and overall regularity.</p>
       </div>
@@ -62,7 +49,7 @@ const Carousel = (props) =>{
       <div className="distance-bottom"> </div>
       <div className="carousel-caption d-none d-md-block">
         
-        <p>The energy of a song can be influenced by loudness and instrumentation, 
+        <p className="caption">The energy of a song can be influenced by loudness and instrumentation, 
           but energy can also change when the lyrics reflect more emotion rather than 
           observation, through different chords, and can rise with a song's melody. 
         </p>
@@ -72,17 +59,29 @@ const Carousel = (props) =>{
 
     <div className="carousel-item">
     <div className="distance-top"> </div>
-      <h1 className="statTitle">Energy2- make this an actual valid slide: {props.energy}</h1>
+      <h1 className="statTitle">Speechiness {props.speech}</h1>
       <div className="distance-bottom"> </div>
       <div className="carousel-caption d-none d-md-block">
         
-        <p>The energy of a song can be influenced by loudness and instrumentation, 
-          but energy can also change when the lyrics reflect more emotion rather than 
-          observation, through different chords, and can rise with a song's melody. 
+        <p className="caption">The speechines of a song is the presence of spoken word in a track. less than 0.033 is instrumental,
+          0.033-0.066 is a mix, and 0.067 and above is primarily spoken word.
         </p>
       </div>
     </div>
 
+
+    <div className="carousel-item">
+    <div className="distance-top"> </div>
+      <h1 className="statTitle">Valence {props.valence}</h1>
+      <div className="distance-bottom"> </div>
+      <div className="carousel-caption d-none d-md-block">
+        
+        <p className="caption"> Valence describes the musical positiveness conveyed by a track.
+           Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric),
+            while tracks with low valence sound more negative (e.g. sad, depressed, angry)
+        </p>
+      </div>
+    </div>
 
 
 
